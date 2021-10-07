@@ -1,0 +1,16 @@
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\bin\Debug\net5.0\Injecao-de-Dependencia.exe
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\bin\Debug\net5.0\Injecao-de-Dependencia.deps.json
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\bin\Debug\net5.0\Injecao-de-Dependencia.runtimeconfig.json
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\bin\Debug\net5.0\Injecao-de-Dependencia.runtimeconfig.dev.json
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\bin\Debug\net5.0\Injecao-de-Dependencia.dll
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\bin\Debug\net5.0\ref\Injecao-de-Dependencia.dll
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\bin\Debug\net5.0\Injecao-de-Dependencia.pdb
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\obj\Debug\net5.0\Injecao-de-Dependencia.csproj.AssemblyReference.cache
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\obj\Debug\net5.0\Injecao-de-Dependencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\obj\Debug\net5.0\Injecao-de-Dependencia.AssemblyInfoInputs.cache
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\obj\Debug\net5.0\Injecao-de-Dependencia.AssemblyInfo.cs
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\obj\Debug\net5.0\Injecao-de-Dependencia.csproj.CoreCompileInputs.cache
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\obj\Debug\net5.0\Injecao-de-Dependencia.dll
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\obj\Debug\net5.0\ref\Injecao-de-Dependencia.dll
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\obj\Debug\net5.0\Injecao-de-Dependencia.pdb
+C:\Users\JAMES\Documents\Projetos-C#\Injecao-de-Dependencia\obj\Debug\net5.0\Injecao-de-Dependencia.genruntimeconfig.cache
