@@ -1,0 +1,48 @@
+{
+   "Routes": [
+      {
+         "DownstreamPathTemplate": "/api/products",
+         "DownstreamScheme": "http",
+         "DownstreamHostAndPorts": [
+             {
+                 "Host": "localhost",
+                 "Port": 1001
+             }
+         ],
+         "UpstreamPathTemplate": "/api/products",
+         "UpstreamHttpMethod": [ "Get" ],
+         "AuthenticationOptions": {
+            "AuthenticationProviderKey": "TestKey",
+            "AllowedScopes": []
+          }
+      },
+      {
+         "DownstreamPathTemplate": "/api/customers",
+         "DownstreamScheme": "http",
+         "DownstreamHostAndPorts": [
+             {
+                 "Host": "localhost",
+                 "Port": 2001
+             }
+         ],
+         "UpstreamPathTemplate": "/api/customers",
+         "UpstreamHttpMethod": [ "Get" ]
+      },
+      
+      {
+         "DownstreamPathTemplate": "/api/auths",
+         "DownstreamScheme": "http",
+         "DownstreamHostAndPorts": [
+             {
+                 "Host": "localhost",
+                 "Port": 3001
+             }
+         ],
+         "UpstreamPathTemplate": "/api/auths",
+         "UpstreamHttpMethod": [ "Get" ]
+      }
+   ],
+   "GlobalConfiguration": {
+       "BaseUrl": "https://localhost:4000"
+   }
+}
