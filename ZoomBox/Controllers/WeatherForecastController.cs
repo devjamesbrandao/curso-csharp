@@ -65,32 +65,30 @@ namespace Notas.Controllers
                 //Abre conexão com o servidor de banco de dados
                 sql.Open();
 
-                string cupoms = "SELECT top(2) [numerocupom] FROM [BlocoNotas].[dbo].[WsVenda]";
+                string selectCupoms = "SELECT top(2) [numerocupom] FROM [BlocoNotas].[dbo].[WsVenda]";
 
-                string cabecalho = $"SELECT [numerocupom], [valor] FROM [BlocoNotas].[dbo].[WsVenda] where numerocupom = @numerocupom";
+                string selectCabecalho = $"SELECT [numerocupom], [valor] FROM [BlocoNotas].[dbo].[WsVenda] where numerocupom in @numerocupom";
 
-                string itens = $"SELECT [id], [numerocupom], [prod], [quant], [preco], [descricao] FROM [BlocoNotas].[dbo].[WsItemVenda] where numerocupom = @numerocupom";
+                string selectItens = $"SELECT [id], [numerocupom], [prod], [quant], [preco], [descricao] FROM [BlocoNotas].[dbo].[WsItemVenda] where numerocupom in @numerocupom";
 
-                List<int> ids = (await sql.QueryAsync<int>(cupoms)).ToList();
+                List<int> numerocupom = (await sql.QueryAsync<int>(selectCupoms)).ToList();
 
-                List<WsVenda> vendas = new List<WsVenda>(ids.Count);
+                List<WsVenda> vendas = new List<WsVenda>(numerocupom.Count);
 
-                foreach(int numerocupom in ids)
+                var cabs = await sql.QueryAsync<WsCabecalho>(selectCabecalho, new {
+                    numerocupom
+                });
+
+                var itens = await sql.QueryAsync<WsItemVenda>(selectItens, new {
+                    numerocupom
+                });
+
+                foreach(WsCabecalho cabecalho in cabs)
                 {
-
-                    var re1 = await sql.QueryFirstOrDefaultAsync<WsCabecalho>(cabecalho, new {
-                        numerocupom
-                    });
-
-                    var re2 = await sql.QueryAsync<WsItemVenda>(itens, new {
-                        numerocupom
-                    });
-
                     vendas.Add(new WsVenda {
-                        WsCabecalho = re1,
-                        WsItemVenda = re2
+                        WsCabecalho = cabecalho,
+                        WsItemVenda = itens.Where(x => x.numerocupom == cabecalho.numerocupom)
                     });
-
                 }
 
                 //Resposta com os dados

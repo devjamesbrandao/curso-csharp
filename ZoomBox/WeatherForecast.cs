@@ -47,6 +47,7 @@ namespace Notas
     public class WsItemVenda
     {
         public int id { get; set; }
+        public int numerocupom { get; set; }
         public int prod { get; set; }
         public int quant { get; set; }
         public int preco { get; set; }
