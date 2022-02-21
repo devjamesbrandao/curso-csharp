@@ -1,6 +1,6 @@
 using System;
 
-namespace Abrir_e_ecrever_em_arquivo
+namespace Teste
 {
 
     class Retangulo
