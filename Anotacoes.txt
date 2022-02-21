@@ -1,9 +1,0 @@
--- Focar nas soft skills: habilidade de comunicação e relacionamento pessoal
-	-- Focar no lado técnico: ajudar colegas de equipe, independência, trabalho em equipe, gerência de projetos
-	-- KESTREL: servidor HTTP
-	-- public static void Main(string[] args): é o end-point (ponto de entrada) da nossa aplicação;
-	-- A classe VEICULO deve conter apenas informções pertinentes ao veículo
-	-- A classe NOTA FISCAL *recebe* o pagamento base e a taxa, com isso ela consegue calcular o valor total;
-		-- Veja que a responsabilidade de calcular o pagamento base é delegado a um serviço, assim como a Taxa;
-	-- A classe dados do veículo reúne todas as informações necessárias para gerar a nota fiscal
-	-- 
